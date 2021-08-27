@@ -1,6 +1,7 @@
 ﻿using CRUD_Xamarin.Pages;
 using CRUD_Xamarin.Services.Account;
 using CRUD_Xamarin.Services.Navigation;
+using CRUD_Xamarin.Services.Statements;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -29,7 +30,8 @@ namespace CRUD_Xamarin.PageModels.Base
 
             //Register services (services are registerd as Sigleton default)
             _container.Register<INavigationService, NavigationService>();
-            _container.Register<IAccountService, AccountService>();
+            _container.Register<IAccountService, MockAccountService>();
+            _container.Register<IStatementService, MockStatementsService>();
 
         }
 

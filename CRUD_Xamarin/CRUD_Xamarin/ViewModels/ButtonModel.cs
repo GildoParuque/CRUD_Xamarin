@@ -44,12 +44,12 @@ namespace CRUD_Xamarin.ViewModels
             IsEnable = isEnabled;
         }
 
-        public ButtonModel(string text, Action action, bool isVisible =true, bool isEnable = true)
+        public ButtonModel(string text, Action action, bool isVisible = true, bool isEnable = true)
         {
             Text = text;
             Command = new Command(action);
             IsEnable = isEnable;
-            IsVisible = isEnable;
+            IsVisible = isVisible;
         }
     }
 }

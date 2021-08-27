@@ -5,7 +5,7 @@
              Title="Login"
              >
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout >
             <Label Text="LoginPage"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
